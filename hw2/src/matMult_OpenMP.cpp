@@ -11,7 +11,7 @@
 #include <mpi.h>
 #include <time.h>
 
-#define N 1000                // Size of the matrix
+#define N 10000               // Size of the matrix
 
 using namespace std;
 
@@ -56,5 +56,5 @@ int main(int argc, char* argv[])
 	
 	end=MPI_Wtime();				 			    // Stop stopwatch
 	
-	cout<<"Time Taken :"<< (end-start) <<" seconds"<<endl;
+	cout<<"Time Taken : "<< (end-start) <<" seconds"<<endl;
 }
