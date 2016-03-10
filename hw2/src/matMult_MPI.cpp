@@ -10,7 +10,7 @@
 #include <mpi.h>
 #include <time.h>
 
-#define N 10000
+#define N 10
 
 using namespace std;
 
