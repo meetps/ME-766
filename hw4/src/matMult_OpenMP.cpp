@@ -11,7 +11,7 @@
 #include <mpi.h>
 #include <time.h>
 
-#define N 2000               // Size of the matrix
+#define N 500               // Size of the matrix
 
 using namespace std;
 
