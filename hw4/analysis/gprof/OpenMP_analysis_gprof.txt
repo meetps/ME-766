@@ -1,11 +1,12 @@
 Flat profile:
 
 Each sample counts as 0.01 seconds.
+ no time accumulated
+
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
-100.04     43.92    43.92                             main
-  0.00     43.92     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
-  0.00     43.92     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -34,22 +35,13 @@ name       the name of the function.  This is the minor sort
 	   in parenthesis it shows where it would appear in
 	   the gprof listing if it were to be printed.
 
-Copyright (C) 2012 Free Software Foundation, Inc.
-
-Copying and distribution of this file, with or without modification,
-are permitted in any medium without royalty provided the copyright
-notice and this notice are preserved.
-
 		     Call graph (explanation follows)
 
 
-granularity: each sample hit covers 2 byte(s) for 0.02% of 43.92 seconds
+granularity: each sample hit covers 2 byte(s) no time propagated
 
 index % time    self  children    called     name
-                                                 <spontaneous>
-[1]    100.0   43.92    0.00                 main [1]
------------------------------------------------
-                0.00    0.00       1/1           __libc_csu_init [244]
+                0.00    0.00       1/1           __libc_csu_init [15]
 [8]      0.0    0.00    0.00       1         _GLOBAL__sub_I_main [8]
                 0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [9]
 -----------------------------------------------
@@ -68,7 +60,7 @@ index % time    self  children    called     name
      index	A unique number given to each element of the table.
 		Index numbers are sorted numerically.
 		The index number is printed next to every function name so
-		it is easier to look up where the function is in the table.
+		it is easier to look up where the function in the table.
 
      % time	This is the percentage of the `total' time that was spent
 		in this function and its children.  Note that due to
@@ -138,13 +130,8 @@ index % time    self  children    called     name
  were internal to the cycle, and the calls entry for each member shows,
  for that member, how many times it was called from other members of
  the cycle.
-
-Copyright (C) 2012 Free Software Foundation, Inc.
 
-Copying and distribution of this file, with or without modification,
-are permitted in any medium without royalty provided the copyright
-notice and this notice are preserved.
 
 Index by function name
 
-   [8] _GLOBAL__sub_I_main     [9] __static_initialization_and_destruction_0(int, int) [1] main
+   [8] _GLOBAL__sub_I_main     [9] __static_initialization_and_destruction_0(int, int)

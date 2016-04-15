@@ -1,0 +1,24 @@
+==1626== Cachegrind, a cache and branch-prediction profiler
+==1626== Copyright (C) 2002-2011, and GNU GPL'd, by Nicholas Nethercote et al.
+==1626== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==1626== Command: mpirun -np 4 MPI
+==1626== Parent PID: 1622
+==1626== 
+--1626-- warning: Unknown Intel cache config value (0x63), ignoring
+--1626-- warning: L3 cache found, using its data for the LL simulation.
+==1626== 
+==1626== I   refs:      16,724,935
+==1626== I1  misses:        50,365
+==1626== LLi misses:         5,677
+==1626== I1  miss rate:       0.30%
+==1626== LLi miss rate:       0.03%
+==1626== 
+==1626== D   refs:       5,253,902  (3,599,449 rd   + 1,654,453 wr)
+==1626== D1  misses:       131,999  (  111,539 rd   +    20,460 wr)
+==1626== LLd misses:        13,718  (    7,824 rd   +     5,894 wr)
+==1626== D1  miss rate:        2.5% (      3.0%     +       1.2%  )
+==1626== LLd miss rate:        0.2% (      0.2%     +       0.3%  )
+==1626== 
+==1626== LL refs:          182,364  (  161,904 rd   +    20,460 wr)
+==1626== LL misses:         19,395  (   13,501 rd   +     5,894 wr)
+==1626== LL miss rate:         0.0% (      0.0%     +       0.3%  )

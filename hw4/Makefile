@@ -11,3 +11,6 @@ matMult_CUDA: kernel.o
 
 kernel.o:
 	nvcc -c -arch=sm_20 src/kernel.cu
+
+clean:
+	rm -rf CUDA OpenMP MPI kernel.o
