@@ -5,8 +5,9 @@ Each sample counts as 0.01 seconds.
 
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
-  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
-  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+100.20     51.36    51.36                             main
+  0.00     51.36     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00     51.36     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
 
  %         the percentage of the total running time of the
 time       program used by this function.
@@ -41,6 +42,9 @@ name       the name of the function.  This is the minor sort
 granularity: each sample hit covers 2 byte(s) no time propagated
 
 index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0   51.36    0.00                 main [1]
+-----------------------------------------------
                 0.00    0.00       1/1           __libc_csu_init [15]
 [8]      0.0    0.00    0.00       1         _GLOBAL__sub_I_main [8]
                 0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [9]

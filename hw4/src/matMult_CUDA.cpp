@@ -1,3 +1,10 @@
+/***********************************************************
+/ File : Matrix Multiplication using CUDA
+/ Auth ; Meet Pragnesh Shah
+/ Mail : meetshah1995@gmail.com
+/ Desc : HW 3 solution for ME 766  
+/******************************************************/
+
 #include <stdio.h>
 #include <random>
 #include <time.h>
