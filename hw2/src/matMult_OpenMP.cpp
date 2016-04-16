@@ -11,7 +11,7 @@
 #include <mpi.h>
 #include <time.h>
 
-#define N 2000               // Size of the matrix
+#define N 1000               // Size of the matrix
 
 using namespace std;
 
@@ -31,8 +31,8 @@ int main(int argc, char* argv[])
         {
             for(int j=0; j<N; j++)
             {                         
-		A[i] = i+j;
-                B[i] = i*j;
+		A[i] = 1;   //i+j;
+                B[i] = 1;   //i*j;
             }
         }	
 
